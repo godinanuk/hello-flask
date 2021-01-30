@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER "justsayraj@gmail.com"
+MAINTAINER "justsayraj123@gmail.com"
 
 RUN apt-get update -y && \
     apt-get install -y python-pip python-dev python-mysqldb
