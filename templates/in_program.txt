@@ -1,0 +1,25 @@
+headings = ("Name", "Role", "Salary")
+
+data = (
+    ('John','Manager','$42,000'),
+    ('Amy','Product Owner','$36,000'),
+    ('Cathie','Security Engineer','$35,000'),
+)
+
+render_template("table.html", headings=headings, data=data)
+
+
+
+<tr>
+  {% for header in headings %}
+  <th>{{ header }}</th>
+  {% endfor %}
+</tr>
+
+{% for row in data %}
+<tr>
+  {% for cell in row %}
+  <td>{{ cell }}</td>
+  {% endfor %}
+</tr>
+{% endfor %}
